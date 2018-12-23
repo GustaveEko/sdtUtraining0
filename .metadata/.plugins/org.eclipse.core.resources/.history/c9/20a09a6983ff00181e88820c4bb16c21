@@ -1,0 +1,12 @@
+package oop;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Person person = new Person("James", "4406 Chptk", "45457474747", "single", "work i am a cook");
+		System.out.println(person.getName());
+		
+
+	}
+
+}

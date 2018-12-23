@@ -1,0 +1,28 @@
+package com.ekoSoftDevop;
+
+public class Student {
+	
+	/**Create a Student Database with the following attributes:
+- New Student constructor that takes name and SSN in the arguments
+- Automatically create an email ID based on the name
+- Set a private static ID
+- Generate a user ID that is combination of Static ID, random 4-digit number between 1000 and 9000, and last 4 of SSN
+- Methods: enroll(), pay(), checkBalance(), toString(), showCourses()
+- Use encapsulation to set variables (phone, city, state)*/
+	
+	
+	private String firstName;
+	private String lastName;
+	private int gradeYear;
+	private String email;
+	private String studentID;
+	private String courses = null;
+	private double tuitionBalance = 0;
+	private static double costOfcourse = 600;
+	private static int id = 1000;
+	private static int SSN;
+	
+	//1Constructor
+	
+
+}

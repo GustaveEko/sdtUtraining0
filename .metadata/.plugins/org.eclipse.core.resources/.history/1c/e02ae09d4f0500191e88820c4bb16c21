@@ -1,0 +1,11 @@
+package labs;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		BankAccount acc1 = new BankAccount("234658970");
+		System.out.println(acc1);
+
+	}
+
+}

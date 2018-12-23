@@ -1,0 +1,58 @@
+package com.ekoSoftDevop;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Student {
+	
+	/**Create a Student Database with the following attributes:
+- New Student constructor that takes name and SSN in the arguments
+
+- Automatically create an email ID based on the name
+- Set a private static ID
+- Generate a user ID that is combination of Static ID, random 4-digit number between 1000 and 9000, and last 4 of SSN
+- Methods: enroll(), pay(), checkBalance(), toString(), showCourses()
+- Use encapsulation to set variables (phone, city, state)*/
+	
+	
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String studentID;
+	private static int id = 1000;
+	private static int SSN;
+	
+	
+	//1Constructor
+	public Student() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter your First Name: ");
+		this.firstName = input.nextLine();
+		
+		System.out.print("Enter your Last Name: ");
+		
+		this.lastName = input.nextLine();System.out.println(firstName+ " "+lastName+" "+ "Student ID:"+ studentID);
+		
+		id++;
+		createEmail();
+		generateUserID();
+		
+	}
+	//create email based on the name
+	public String createEmail() {
+		return firstName+"@"+lastName.substring(0, 3)+"univ.edu";
+	}
+	
+	//Generate userID
+	public String generateUserID() {
+		Random r = new Random();
+		int low = 1000;
+		int high = 9000;
+		int result = r.nextInt(high-low) + low;
+		return result + firstName+lastName+id;
+		
+	}
+	
+	
+
+}

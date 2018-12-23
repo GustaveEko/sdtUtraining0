@@ -1,0 +1,73 @@
+package oop;
+
+public class Person {
+	 String name;
+	 String address;
+	 String phone;
+	 String maritaStatus;
+	 String workStatus;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", address=" + address + ", phone=" + phone + ", maritaStatus=" + maritaStatus
+				+ ", workStatus=" + workStatus + "]";
+	}
+	public Person(String name, String address, String phone, String maritaStatus, String workStatus) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.phone = phone;
+		this.maritaStatus = maritaStatus;
+		this.workStatus = workStatus;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getMaritaStatus() {
+		return maritaStatus;
+	}
+	public void setMaritaStatus(String maritaStatus) {
+		this.maritaStatus = maritaStatus;
+	}
+	public String getWorkStatus() {
+		return workStatus;
+	}
+	public void setWorkStatus(String workStatus) {
+		this.workStatus = workStatus;
+	}
+	public void Introduction() {
+		System.out.println("My name is "+ name);
+	}
+	public void Shopping() {
+		System.out.println("I like shopping");
+	
+		
+	}
+	public void livingLocation() {
+		System.out.println("If you would like to visit me, come to my place at "+ address);
+		
+	}
+	public void call() {
+		System.out.println(" Before coming to my place, please call me to let me know first my phone is  "+ phone);
+		
+		
+	}
+	public void dressingUp() {
+		System.out.println("Please feel free to play arround, I am still"+ maritaStatus );
+	}
+
+}

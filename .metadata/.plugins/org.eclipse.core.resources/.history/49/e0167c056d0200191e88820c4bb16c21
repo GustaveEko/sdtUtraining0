@@ -1,0 +1,15 @@
+package bankProject;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		//this will show an error because our constructor does not have a string and an int as parameterr
+		//let create a couple more accounts
+		 BankAccount acc1 = new BankAccount("465329874", 1000); 
+		             BankAccount acc2 = new BankAccount("535353535", 2000);
+		             BankAccount acc3 = new BankAccount("535353535", 2400);
+
+
+	}
+
+}

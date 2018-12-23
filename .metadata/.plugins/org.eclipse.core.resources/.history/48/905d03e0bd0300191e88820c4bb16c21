@@ -1,0 +1,31 @@
+package studentDatabaseApp;
+
+import java.util.Scanner;
+
+public class Student {
+	private String firstName;
+	private String lastName;
+	private String gradeYear;
+	private String studentID;
+	private String course;
+	private double tuitionBalance;
+	private double costOfTuition = 600;
+	
+//*****************************   OUTLINES   *******************************
+	//Constructor: Prompt the user to enter student's name and year
+	
+	public Student() {
+		Scanner input  new Scanner(System.in);
+	}
+	
+	// 1) Generate ID
+	
+	
+	//2) enroll In courses
+	
+	//3) view Balance
+	
+	//4)pay Tuition
+	
+	//5) Show Status
+}

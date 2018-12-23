@@ -1,0 +1,27 @@
+package bankProject;
+
+public class BankAccount {
+	//Here we want to use the Encapsulation, so let make all these properties public
+	private static int iD = 1000; //let initialize it like so
+		     private String accountNumber;
+			private  static final String routingNumber = "005400675";
+		     private String name;
+		     private String SSN;
+		     private double  balance;
+		     private final double interest = 00.01;
+		     
+		   //3) Generate constructor
+		     public BankAccount(String SSN, double initDeposit) {
+					balance = initDeposit;
+					
+					/**we use the ssn to generate the account number
+					which is a Combination of iD+ random 2-digit-number+
+					the First 2 of the SSN)*/ 
+					System.out.println("NEW ACCOUNT CREATED!");
+					
+					// this means that the value of the instance value SNN is equal to the value of the local value SNN
+					this.SSN= SSN;
+					iD++;
+				}
+
+}

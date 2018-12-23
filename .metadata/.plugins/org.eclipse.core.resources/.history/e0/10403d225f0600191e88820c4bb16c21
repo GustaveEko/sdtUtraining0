@@ -1,0 +1,85 @@
+package com.ekoSoftDevop;
+
+import java.util.Scanner;
+
+public class Student2 {
+	private String firstName;
+	private String lastName;
+	private int gradeYear;
+	private String studentID;
+	private String emailID;
+	private String courses = null;
+	private double checkBalance = 0;
+	private static double costOfcourse = 600;
+	private static int id = 1000;
+	
+//*****************************   OUTLINES   *******************************
+	//Constructor: Prompt the user to enter student's name and year
+	
+	public Student2(String name, String SSN ) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter your First Name: ");
+		this.firstName = input.nextLine();
+		
+		System.out.print("Enter your Last Name: ");
+		this.lastName = input.nextLine();
+		
+		// let call the setStudentID() method here.
+		setEmailID();
+		
+		id++;
+		
+		
+		}
+	
+	// 1) Generate emailID
+	//we want each student to have their own unique ID
+	private void setEmailID() {
+		id++;
+		this.emailID = emailID+""+id;
+		System.out.println(firstName+lastName.substring(0,3)+"@.univ.edu");
+	}
+	
+	
+	//2) enroll In courses
+	public void enroll() {
+		do {
+			System.out.println("Enter course to enroll or exit): ");
+			Scanner in = new Scanner(System.in);
+			String course = in.nextLine();
+			if(!course.equalsIgnoreCase("Exit")) {
+				courses = courses +"\n"+course;
+				checkBalance = checkBalance +costOfcourse;
+			}else
+				break;
+		}while(1 >0);
+		System.out.print("Enrolled in: "+ courses);
+		System.out.println("Tuition Balance: "+ checkBalance);
+	}
+	
+	//3) view Balance
+	public void viewBalance() {
+		System.out.println("You balance is: "+ checkBalance);
+	}
+	
+	//4)pay
+	public void payTuition() {
+		viewBalance();
+		System.out.print("Please swipe on insert your card for payment: $");
+		Scanner in = new Scanner(System.in);
+		double payment = in.nextDouble();
+		checkBalance = checkBalance - payment;
+		System.out.println("Thank you for your payment of: $"+payment);
+		viewBalance();
+	}
+	
+	//5) Show Information 
+	@Override
+	public String toString() {
+		return "Name: "+ firstName +" "+ lastName + "\nGrade Year: " + gradeYear
+				+ "\nStudent ID: "+ studentID + "\nCourses: " + courses + "\nTuition Balance: " + checkBalance;
+	}
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package demo;
+
+public class TestArrays {
+	String[] islands = new String[4];
+	islands[0] = "Bermida";
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

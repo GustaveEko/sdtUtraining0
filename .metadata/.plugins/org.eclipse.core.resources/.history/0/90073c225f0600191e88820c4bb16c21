@@ -1,0 +1,27 @@
+package com.ekoSoftDevop;
+
+import java.util.Scanner;
+
+public class StudentDatabaseApp2 {
+
+	public static void main(String[] args) {
+		// Ask how many user we want to add
+		System.out.print("Enter the number of student you want to add: ");
+		Scanner input = new Scanner(System.in);
+		int numberOfStudents = input.nextInt();
+		Student2[] students = new Student2[numberOfStudents];
+		
+		
+		
+		
+		//Create n number of few student
+		for (int n=0; n<numberOfStudents;n++) {
+			students[n] = new Student2(null, null);
+			students[n].enroll();
+			students[n].payTuition();
+			System.out.println(students[n].toString());
+		}
+		
+
+	  }
+	}

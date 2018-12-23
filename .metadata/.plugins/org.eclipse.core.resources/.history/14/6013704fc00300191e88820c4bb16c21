@@ -1,0 +1,58 @@
+package studentDatabaseApp;
+
+import java.util.Scanner;
+
+public class Student {
+	private String firstName;
+	private String lastName;
+	private int gradeYear;
+	private String studentID;
+	private String course;
+	private double tuitionBalance;
+	private double costOfTuition = 600;
+	
+//*****************************   OUTLINES   *******************************
+	//Constructor: Prompt the user to enter student's name and year
+	
+	public Student() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter your First Name: ");
+		this.firstName = input.nextLine();
+		
+		System.out.print("Enter your Last Name: ");
+		this.lastName = input.nextLine();
+		
+		System.out.println("Enter class level :\n 1 -Freshman\n 2 -Sophomore\n 3 -Junior\n 4 -Senior");
+		this.gradeYear = input.nextInt();
+		switch(gradeYear) {
+		case 1:
+			System.out.println("You are a Freshman");
+			break;
+		case 2:
+			System.out.println("You are a sophomore");
+			break;
+		case 3:
+			System.out.println("You are a Junior");
+			break;
+		case 4:
+			System.out.println("Congratulation almost done!");
+			break;
+			default:
+				System.out.println("You need to enter a grade year please!");
+				break;
+		}
+		
+		
+	}
+	
+	// 1) Generate ID
+	
+	
+	//2) enroll In courses
+	
+	//3) view Balance
+	
+	//4)pay Tuition
+	
+	//5) Show Status
+}

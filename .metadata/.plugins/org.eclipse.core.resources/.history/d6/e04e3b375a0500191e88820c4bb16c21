@@ -1,0 +1,13 @@
+package com.ekoSoftDevop;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Student {
+	private static int ID = 1000;
+	private String firstName;
+	private String lastName;
+	private String SSN;
+	
+
+}

@@ -1,0 +1,13 @@
+package bankProject;
+
+public class StudentDB {
+	private String firstName;
+	private String lastName;
+	private int gradeYear;
+	private String studentID;
+	private String courses = null;
+	private double tuitionBalance = 0;
+	private static double costOfcourse = 600;
+	private static int id = 1000;
+
+}

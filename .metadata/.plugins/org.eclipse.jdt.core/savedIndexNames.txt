@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\geeko\Desktop\JavaTraining8TimShort\.metadata\.plugins\org.eclipse.jdt.core

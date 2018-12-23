@@ -1,0 +1,14 @@
+package studentDatabaseApp;
+
+public class StudentDatabaseApp {
+
+	public static void main(String[] args) {
+		// Ask how many user we want to add
+		Student std1 = new Student();
+		
+		
+		//Create n number of few student
+
+	}
+
+}

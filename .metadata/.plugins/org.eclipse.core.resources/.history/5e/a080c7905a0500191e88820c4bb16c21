@@ -1,0 +1,39 @@
+package com.ekoSoftDevop;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Student {
+	private static int ID = 1000;
+	private String firstName;
+	private String lastName;
+	private String SSN = "003459087";
+	private String email;
+	
+	//New Student constructor that takes name and SSN in the arguments
+	public Student( String SSN) {
+		this.SSN = SSN;
+		register();
+		
+	}
+	
+	
+	public void setEmail() {
+		email = firstName+lastName.substring(0, 3)+"@"+"univverstyName.edu";
+		
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void register() {
+		Scanner input = new Scanner(System.in);
+		//prompting the student to enter their name:
+		System.out.print("Enter First Name: ");
+		firstName = input.nextLine();
+		System.out.print("Enter Last Name: ");
+		lastName = input.nextLine();
+	}
+	
+	
+
+}

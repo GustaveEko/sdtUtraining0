@@ -1,0 +1,17 @@
+package studentDatabaseApp;
+
+public class Student {
+//*****************************   OUTLINES   *******************************
+	//Constructor: Prompt the user to enter student's name and year
+	
+	// 1) Generate ID
+	
+	
+	//2) enroll In courses
+	
+	//3) view Balance
+	
+	//4)pay Tuition
+	
+	//5) Show Status
+}

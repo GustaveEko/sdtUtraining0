@@ -1,0 +1,10 @@
+package lab2;
+
+public class StudentDatabaseApp {
+
+	public static void main(String[] args) {
+		Student std1 = new Student("Janelle", "076890978");
+
+	}
+
+}

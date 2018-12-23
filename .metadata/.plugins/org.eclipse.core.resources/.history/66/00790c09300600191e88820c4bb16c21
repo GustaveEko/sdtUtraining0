@@ -1,0 +1,11 @@
+package com.ekoSoftDevop;
+
+public class StudentDatabaseApp {
+
+	public static void main(String[] args) {
+		Student std1 = new Student("003459087");
+		System.out.println("Your email is:"+std1.getEmail());
+		
+	}
+
+}
